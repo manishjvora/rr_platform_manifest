@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="mv"
+	   fetch="https://github.com/manishjvora"
+	   revision="rrn" />
+
+<!-- Device, Kernel, Vendor, -->
+  <project name="LineageOS/android_device_samsung_hlte" path="device/samsung/hlte" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_samsung_msm8974-common" path="device/samsung/msm8974-common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_kernel_samsung_msm8974" path="kernel/samsung/msm8974" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-14.1" />
+
+<!-- Lineage Stuff -->
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+
+<!-- Uber TC -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
+  <project name="manishjvora/arm" path="prebuilts/gcc/linux-x86/" remote="github" revision="master" />
+
+<!-- Replace rr stuff with updated stuff -->
+  <!--Remove rr stuff -->
+  <remove-project name="android_build" />
+  <remove-project name="frameworks_av" />
+  <remove-project name="android_frameworks_base" />
+  <remove-project name="frameworks_native" />
+  <remove-project name="android_packages_apps_Messaging" />
+  <remove-project name="android_packages_apps_PackageInstaller" />
+  <remove-project name="Resurrection_packages_apps_Settings" />
+  <remove-project name="android_packages_services_Telephony" />
+  <remove-project name="system_core" />
+  <remove-project name="android_vendor_resurrection" />
+  
+  <!--Add stuff from my git -->  
+  <project path="build" name="rr_android_build" remote="mv" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="frameworks/av" name="rr_frameworks_av" remote="mv" />
+  <project path="frameworks/base" name="rr_android_frameworks_base" remote="mv" />
+  <project path="frameworks/native" name="rr_frameworks_native" remote="mv" />
+  <project path="packages/apps/Messaging" name="rr_android_packages_apps_Messaging" remote="mv" />
+  <project path="packages/apps/PackageInstaller" name="rr_android_packages_apps_PackageInstaller" remote="mv" />
+  <project path="packages/apps/Settings" name="rr_Resurrection_packages_apps_Settings" remote="mv" />
+  <project path="packages/services/Telephony" name="rr_android_packages_services_Telephony" remote="mv" />
+  <project path="system/core" name="rr_system_core" remote="mv" />
+  <project path="vendor/cm" name="rr_android_vendor_resurrection" remote="mv" />
+
+</manifest>
