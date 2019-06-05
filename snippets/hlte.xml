@@ -39,6 +39,7 @@
   <remove-project name="android_vendor_resurrection" />
   <remove-project name="external_skia" />
   <remove-project name="android_packages_apps_Contacts" />
+  <remove-project name="cm_platform_sdk" />
   
   <!--Add stuff from my git -->  
   <project path="build" name="rr_android_build" remote="mv" >
@@ -55,5 +56,6 @@
   <project path="vendor/cm" name="rr_android_vendor_resurrection" remote="mv" />
   <project path="external/skia" name="rr_external_skia" remote="mv" />
   <project path="packages/apps/Contacts" name="rr_android_packages_apps_Contacts" remote="mv" />
-
+  <project path="vendor/cmsdk" name="rr_cm_platform_sdk" remote="mv" />
+  
 </manifest>
