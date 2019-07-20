@@ -42,6 +42,13 @@
   <remove-project name="cm_platform_sdk" />
   <remove-project name="android_packages_apps_Dialer" />
   <remove-project name="android_packages_apps_StorageManager" />
+  <remove-project name="packages_services_OmniJaws" />
+  <remove-project name="android_packages_apps_OmniSwitch" />
+  <remove-project name="android_packages_apps_StorageManager" />
+  <remove-project name="android_packages_apps_ContactsCommon" />
+  <remove-project name="android_packages_apps_PhoneCommon" />
+  <remove-project name="android_packages_services_Telecomm" />
+  <remove-project name="platform_manifest" />
   
   <!--Add stuff from my git -->  
   <project path="build" name="rr_android_build" remote="mv" >
@@ -61,5 +68,12 @@
   <project path="vendor/cmsdk" name="rr_cm_platform_sdk" remote="mv" />
   <project path="packages/apps/Dialer" name="rr_android_packages_apps_Dialer" remote="mv" />
   <project path="packages/apps/StorageManager" name="LineageOS/android_packages_apps_StorageManager" remote="github" revision="cm-14.1" />
+  <project path="packages/services/OmniJaws" name="rr_packages_services_OmniJaws" remote="mv" />
+  <project path="packages/apps/OmniSwitch" name="rr_android_packages_apps_OmniSwitch" remote="mv" />
+  <project path="packages/apps/StorageManager" name="rr_android_packages_apps_StorageManager" remote="mv" />
+  <project path="packages/apps/ContactsCommon" name="rr_android_packages_apps_ContactsCommon" remote="mv" />
+  <project path="packages/apps/PhoneCommon" name="rr_android_packages_apps_PhoneCommon" remote="mv" />
+  <project path="packages/services/Telecomm" name="rr_android_packages_services_Telecomm" remote="mv" />
+  <project path="android" name="rr_platform_manifest" remote="mv" />
   
 </manifest>
