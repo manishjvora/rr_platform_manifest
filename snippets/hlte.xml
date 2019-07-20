@@ -41,6 +41,7 @@
   <remove-project name="android_packages_apps_Contacts" />
   <remove-project name="cm_platform_sdk" />
   <remove-project name="android_packages_apps_Dialer" />
+  <remove-project name="android_packages_apps_StorageManager" />
   
   <!--Add stuff from my git -->  
   <project path="build" name="rr_android_build" remote="mv" >
@@ -59,5 +60,6 @@
   <project path="packages/apps/Contacts" name="rr_android_packages_apps_Contacts" remote="mv" />
   <project path="vendor/cmsdk" name="rr_cm_platform_sdk" remote="mv" />
   <project path="packages/apps/Dialer" name="rr_android_packages_apps_Dialer" remote="mv" />
+  <project path="packages/apps/StorageManager" name="LineageOS/android_packages_apps_StorageManager" remote="github" revision="cm-14.1" />
   
 </manifest>
