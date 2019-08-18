@@ -54,6 +54,7 @@
   <remove-project name="LineageOS/android_packages_apps_FMRadio" />
   <remove-project name="LineageOS/android_packages_apps_Gallery2" />
   <remove-project name="LineageOS/android_packages_apps_Jelly" />
+  <remove-project name="art" />
   
   <!--Add stuff from my git -->  
   <project path="build" name="rr_android_build" remote="mv" >
@@ -79,5 +80,6 @@
   <project path="packages/apps/PhoneCommon" name="rr_android_packages_apps_PhoneCommon" remote="mv" />
   <project path="packages/services/Telecomm" name="rr_android_packages_services_Telecomm" remote="mv" />
   <project path="android" name="rr_platform_manifest" remote="mv" />
-  
+  <project path="art" name="rr_art" remote="mv" />
+    
 </manifest>
